@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -6,7 +5,7 @@
 <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
-<body><div class="container"><p><img src="http://kfan.io/button.css/img/SVG.html.jpg" alt="Button.css" title=""></p>
+<body><div class="container"><p><img src="http://kfan.io/button.css/img/Svg.html.jpg" alt="Button.css" title=""></p>
 
 
 
