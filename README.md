@@ -5,11 +5,11 @@
 <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
-<body><div class="container"><p><img src="http://kfan.io/button.css/img/Svg.html.jpg" alt="Button.css" title=""></p>
+<body><div class="container"><p><img src="http://kfan.io/svg.html/img/Svg.html.jpg" alt="Button.css" title=""></p>
 
 
 
-<h2 id="css3-and-html5-button-animations">CSS3 and HTML5 Button Animations</h2>
+<h2 id="css3-and-html5-button-animations">HTML5 Svg Animations</h2>
 
 <p>All code was written and optimized in HTML5 and CSS3</p>
 
