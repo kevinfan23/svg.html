@@ -6,20 +6,20 @@ Small Window Size and Mobile Style
 -------------------------------- */
 @media screen and (max-width: 875px) {
   .button-container {
-    margin: 10px 10px !important; }
-  h2 {
-    font-size: 14vw !important; } }
+    margin: 10px 10px !important; } }
 
 @media screen and (max-width: 550px) {
-  h2 {
-    font-size: 15vw !important;
-    height: 80px !important; }
+  svg#Svg-html-logo {
+    width: 400px;
+    height: auto !important; }
   .nav, .navbar {
     width: 90% !important; }
     .nav .nav-item, .navbar .nav-item {
       font-size: 10px !important; } }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
+  svg#Svg-html-logo {
+    width: 275px !important; }
   p.intro-des {
     margin-top: 30px !important; }
   .navbar-container {
@@ -39,13 +39,42 @@ html, body {
 h2 {
   font-size: 100px;
   position: relative;
-  display: block;
   height: 120px;
-  color: #5b85c0;
-  background-image: linear-gradient(-180deg, #85D8CE 0%, #4B8EB3 100%);
+  color: #85D8CE;
+  background-image: -webkit-linear-gradient(-180deg, #85D8CE 0%, #4B8EB3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: hue 60s infinite linear; }
+
+/*** svg Logo ***/
+text {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: draw 3s forwards;
+  -moz-animation: draw 3s forwards;
+  -o-animation: draw 3s forwards;
+  -ms-animation: draw 3s forwards;
+  animation: draw 3s forwards; }
+
+@-webkit-keyframes draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@-moz-keyframes draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@-o-keyframes draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@-ms-keyframes draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0; } }
 
 p.intro-des {
   position: relative;
