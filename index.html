@@ -40,11 +40,11 @@
 	<nav class="navbar-container">
 		<ul class="nav navbar">
 			<li class="nav-item active"><a href="#intro">INTRO</a></li>
-			<li class="nav-item"><a href="#flip">FLIP</a></li>
-			<li class="nav-item"><a href="#flip-3d">3D-FLIP</a></li>
-			<li class="nav-item"><a href="#slide">SLIDE</a></li>
-			<li class="nav-item"><a href="#switch">SWITCH</a></li>
-			<li class="nav-item"><a href="#water-fill">WATER FILL</a></li>
+			<li class="nav-item"><a href="#buttons">BUTTONS</a></li>
+			<li class="nav-item"><a href="#">3D-FLIP</a></li>
+			<li class="nav-item"><a href="#">SLIDE</a></li>
+			<li class="nav-item"><a href="#">SWITCH</a></li>
+			<li class="nav-item"><a href="#">WATER FILL</a></li>
 		</ul>
 	</nav>
 
@@ -76,232 +76,48 @@
 	  	</section>
 	</section>
 	
-	<!-- 2-D Flip -->
-	<section class="page-container" id="flip">
+	<!-- Buttons -->
+	<section class="page-container" id="buttons">
 	  	<section class="section-container">
-	    	<h4>Flip</h4>
+	    	<h4>Buttons</h4>
 	    
-		    <!-- Horizontal Flip -->
-		    <div class="button-container button-flip-horizontal">
-		        <div class="flipper flipper-flip-horizontal">
-		            <div class="button front">
+		    <!-- Outline Drawing -->
+		    <div class="button-container button-drawing">
+		        <div class="button">
+			        <svg class="svg-button" height="45" width="200" viewBox="0 0 200 45" xmlns="http://www.w3.org/2000/svg">
+						<rect class="button-outline" height="45" width="200" fill="white" stroke="rgba(85, 172, 238, 1)" stroke-width="3"/>
+					</svg>
+		            <div class="button-icon">
 		              	<i class="fa fa-twitter"></i>
 		            </div>
-		            <div class="button back">
-		              	Twitter
-		            </div>
 		        </div>
 		    </div>
-	    
-			<!-- Vertical Flip -->
-		    <div class="button-container button-flip-vertical">
-		        <div class="flipper flipper-flip-vertical">
-		            <div class="button front">
-		              	<i class="fa fa-facebook"></i>
-		            </div>
-		            <div class="button back">
-		              	Facebook
+		    
+		    		    <div class="button-container button-drawing">
+		        <div class="button">
+			        <svg class="svg-button" height="45" width="200" viewBox="0 0 200 45" xmlns="http://www.w3.org/2000/svg">
+						<rect class="button-outline" height="45" width="200" fill="white" stroke="rgba(85, 172, 238, 1)" stroke-width="3"/>
+					</svg>
+		            <div class="button-icon">
+		              	<i class="fa fa-twitter"></i>
 		            </div>
 		        </div>
 		    </div>
 		    
-			<!-- Oblique Flip -->
-		    <div class="button-container button-flip-oblique">
-		        <div class="flipper flipper-flip-oblique">
-		            <div class="button front">
-		              	<i class="fa fa-instagram"></i>
-		            </div>
-		            <div class="button back">
-		              	Instagram
+		    		    <div class="button-container button-drawing">
+		        <div class="button">
+			        <svg class="svg-button" height="45" width="200" viewBox="0 0 200 45" xmlns="http://www.w3.org/2000/svg">
+						<rect class="button-outline" height="45" width="200" fill="white" stroke="rgba(85, 172, 238, 1)" stroke-width="3"/>
+					</svg>
+		            <div class="button-icon">
+		              	<i class="fa fa-twitter"></i>
 		            </div>
 		        </div>
 		    </div>
 		    
 	  </section>
 	</section>
-	
-	
-	<!-- 3-D Flip -->
-	<section class="page-container" id="flip-3d">
-	  	<section class="section-container">
-		    <h4>3-D Flip</h4>
-		    
-		    <!-- 3-D Flip Downward-->
-			<div class="button-container button-flip3d-vertical1">
-		        <div class="flipper flipper-flip3d-vertical1">
-		            <div class="button front">
-		              	<i class="fa fa-codepen"></i>
-		            </div>
-		            <div class="button button-3d back">
-		              	codepen
-		            </div>
-		        </div>
-	    	</div>
-	    	
-		    <!-- 3-D Flip Upward-->
-			<div class="button-container button-flip3d-vertical2">
-		        <div class="flipper flipper-flip3d-vertical2">
-		            <div class="button front">
-		              	<i class="fa fa-github"></i>
-		            </div>
-		            <div class="button button-3d back">
-		              	Github
-		            </div>
-		        </div>
-	    	</div>
-	    	
-	  </section>
-	</section>
-	
-	
-	<!-- Slide -->
-	<section class="page-container" id="slide">
-	  	<section class="section-container">
-		    <h4>Slide</h4>
-		    
-		    <!-- Horizontal Slide -->
-			<div class="button-container button-slide-horizontal">
-		        <div class="slider slider-horizontal">
-		            <div class="button">
-		              	<i class="fa fa-dribbble"></i>
-		            </div>
-		        </div>
-	    	</div>
-	    
-		    <!-- Vertical Slide -->
-			<div class="button-container button-slide-vertical">
-		        <div class="slider-vertical">
-		            <div class="button">
-		              	<i class="fa fa-medium front"></i>
-		              	<i class="back">Medium</i>
-		            </div>
-		        </div>
-	    	</div>
-	    	
-	  </section>
-	</section>
-	
-	<!-- Switch -->
-	<section class="page-container" id="switch">
-	  <section class="section-container">
-	    <h4>Switch</h4>
-	    
-		<!-- Toogle Slide Switch -->
 		
-	    <div class="switch-container switch-toggle-slide">
-		    <span class="active"></span>
-		    <div class="switch-slide active-switch" id="slide-on">
-			    ON
-		    </div>
-		    <div class="switch-slide" id="slide-off">
-			    OFF
-		    </div>
-		</div>
-		
-		<br>
-
-		<!-- Slim Switches -->
-	    <div class="switch-container switch-slim">
-			<input type="checkbox" name="slim" class="slim" id="slim-blue"/>
-			<label for="slim-blue"></label>
-		</div>
-		
-	    <div class="switch-container switch-slim">
-			<input type="checkbox" checked name="slim" class="slim" id="slim-red"/>
-			<label for="slim-red"></label>
-		</div>
-		
-		<div class="switch-container switch-slim">
-			<input type="checkbox" name="slim" class="slim" id="slim-green"/>
-			<label for="slim-green"></label>
-		</div>
-		
-		<div class="switch-container switch-slim">
-			<input type="checkbox" checked name="slim" class="slim" id="slim-black"/>
-			<label for="slim-black"></label>
-		</div>
-		
-		
-		<br>
-		
-		<div class="button-row-container">
-			<!-- iOS Switch -->
-			
-		    <div class="switch-container switch-ios">
-				<input type="checkbox" name="ios" id="ios"/>
-				<label for="ios"></label>
-			</div>
-			
-			<!-- Skewed Switch -->
-			
-		    <div class="switch-container switch-skewed">
-			    <div class="skewed-container">
-					<div class="skewed skewed-on">OFF</div>
-					<div class="skewed skewed-off">ON</div>
-			    </div>
-			</div>
-		
-		</div>
-				
-		<!-- Flat Day/Night Switch 
-		
-	    <div class="switch-container switch-flat">
-			<input type="checkbox" name="ios" class="flat" id="flat"/>
-			<label for="flat"></label>
-		</div>
-		-->
-	  </section>
-	</section>
-	
-	<!-- Water Fill -->
-	<section class="page-container" id="water-fill">
-	  <section class="section-container">
-	    <h4>Water Fill</h4>
-	    <p class="reference">*Inspired by <a href="http://codepen.io/Bergability/" target="_blank">Scott Berg</a></p>
-	    
-		<div class="button-container button-water-fill wave-blue">
-	        <div class="filler">
-	            <div class="button">
-	              	<i>Blue</i>
-	            </div>
-	        </div>
-    	</div>
-    	
-		<div class="button-container button-water-fill wave-red">
-	        <div class="filler">
-	            <div class="button">
-	              	<i>Red</i>
-	            </div>
-	        </div>
-    	</div>
-    	
-		<div class="button-container button-water-fill wave-yellow">
-	        <div class="filler">
-	            <div class="button">
-	              	<i>Yellow</i>
-	            </div>
-	        </div>
-    	</div>
-    	
-		<div class="button-container button-water-fill wave-white">
-	        <div class="filler">
-	            <div class="button">
-	              	<i>White</i>
-	            </div>
-	        </div>
-    	</div>
-    	
-		<div class="button-container button-water-fill wave-black">
-	        <div class="filler">
-	            <div class="button">
-	              	<i>Black</i>
-	            </div>
-	        </div>
-    	</div>
-	    	
-	  </section>
-	</section>
-	
 	<!-- Social Media and Contacts at Footer-->
 	<nav class="footer">
 		<ul class="nav socialbar">
