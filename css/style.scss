@@ -70,6 +70,16 @@ html, body {
 	font-weight: 300;
 }
 
+p.reference {
+	margin-top: -20px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	
+	a {
+		color: $dark-gray;
+	}
+}
+
 /*** svg Logo ***/
 
 text {
@@ -357,7 +367,72 @@ section.page-container {
 /* -------------------------------- 
 			3D-Flip
 -------------------------------- */
+svg.draw-fill-container {
+	width: 70vw;
+	max-width: 600px;
+	height: auto;
+	max-height: 380px;
+	
+	g {		
+		fill-opacity: 1;
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 0;
+	}
+	
+	g .drawing {
+		-moz-animation: 3s draw-fill ease-in-out;
+		-webkit-animation: 3s draw-fill ease-in-out;
+		animation: 3s draw-fill ease-in-out;
+	}
+}
 
+@-moz-keyframes draw-fill {
+	0% {
+		stroke-dashoffset: 1000;
+		fill-opacity: 0;
+  	}
+  	75% {
+		stroke-dashoffset: 0;
+		fill-opacity: 0;
+
+  	}
+  	100% {
+		stroke-dashoffset: 0;
+		fill-opacity: 1;
+  	}
+}
+
+@-webkit-keyframes draw-fill {
+	0% {
+		stroke-dashoffset: 1000;
+		fill-opacity: 0;
+  	}
+  	75% {
+		stroke-dashoffset: 0;
+		fill-opacity: 0;
+
+  	}
+  	100% {
+		stroke-dashoffset: 0;
+		fill-opacity: 1;
+  	}
+}
+
+@keyframes draw-fill {
+	0% {
+		stroke-dashoffset: 1000;
+		fill-opacity: 0;
+  	}
+  	75% {
+		stroke-dashoffset: 0;
+		fill-opacity: 0;
+
+  	}
+  	100% {
+		stroke-dashoffset: 0;
+		fill-opacity: 1;
+  	}
+}
 
 /* -------------------------------- 
 			Footer

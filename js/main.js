@@ -15,12 +15,13 @@ $(document).ready(function() {
 	
 	// Update nav selected when click
 	$('a').on('click', function() {
-		console.log("haha");
 		$('.nav-item').removeClass('active');
 		$(this).parent().addClass('active');
 	});
-	
-	slideSwitch();
+		
+	$(window).scroll(function(){
+    	drawFillAnimation();
+	});
 	
 });
 
@@ -75,27 +76,33 @@ function updateNavigation() {
    }                   
 }
 
-// Update slide switch highlight
-function slideSwitch() {
-	$('.switch-slide').on('click', function() {
-		
-	var activeSpan = $('.switch-toggle-slide .active');
+// Check if element is in viewpoint
+function isElementInViewport(elem) {
+    var $elem = $(elem);
 
-	if (activeSpan.css('left') == '0px') {
-		activeSpan.css('left', '50%');
-	}
+    // Get the scroll position of the page.
+    var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+    var viewportTop = $(scrollElem).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    // Get the position of the element on the page.
+    var elemTop = Math.round( $elem.offset().top );
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+}
+
+// Check if it's time to start the radial progress animation.
+function drawFillAnimation() {
 	
-	if (activeSpan.css('left') == '125px') {
-		activeSpan.css('left', '0');
-	}
-	
-	if ($(this).hasClass('active-switch')) {
-		$('.switch-slide').addClass('active-switch')
-		$(this).removeClass('active-switch');
-	}
-	else {
-		$('.switch-slide').removeClass('active-switch')
-		$(this).addClass('active-switch');
-	}
-	});
+    var $elem = $('.draw-fill-container');
+
+    // If the animation has already been started
+    //if ($elem1.hasClass('fill-one')) return;
+    //if ($elem2.hasClass('fill-two')) return;
+    if (isElementInViewport($elem)) {
+        // Start the animation
+        $('.draw-fill-container g').attr('class', 'drawing');
+       // $('.draw-fill-container g').attr('class', 'filling');
+    }
 }
