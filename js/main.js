@@ -109,7 +109,7 @@ function drawFillAnimation() {
     }
     if (isElementInViewport($elem2)) {
         // Start the animation
-        updateNumber();
+        setTimeout(updateNumber, 500);
         $('#chart g').attr('class', 'drawing');
     }
 }
