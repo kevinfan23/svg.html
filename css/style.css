@@ -15,7 +15,9 @@ Small Window Size and Mobile Style
   .nav, .navbar {
     width: 90% !important; }
     .nav .nav-item, .navbar .nav-item {
-      font-size: 10px !important; } }
+      font-size: 10px !important; }
+  #chart svg {
+    height: 300px !important; } }
 
 @media screen and (max-width: 450px) {
   svg#Svg-html-logo {
@@ -264,23 +266,25 @@ section.page-container {
     opacity: 1; } }
 
 /* -------------------------------- 
-			Loader
+			Pulse
 -------------------------------- */
 #pulse svg g {
   stroke-dasharray: 80 1000;
+  -moz-animation: 3s Pulse ease-in-out infinite;
+  -webkit-animation: 3s Pulse ease-in-out infinite;
   animation: 3s Pulse ease-in-out infinite; }
 
 @-moz-keyframes Pulse {
   0% {
-    stroke-dashoffset: 1000; }
+    stroke-dashoffset: 120; }
   100% {
-    stroke-dashoffset: 0; } }
+    stroke-dashoffset: -1000; } }
 
 @-webkit-keyframes Pulse {
   0% {
-    stroke-dashoffset: 1000; }
+    stroke-dashoffset: 120; }
   100% {
-    stroke-dashoffset: 0; } }
+    stroke-dashoffset: -1000; } }
 
 @keyframes Pulse {
   0% {
@@ -337,6 +341,22 @@ svg.draw-fill-container {
   100% {
     stroke-dashoffset: 0;
     fill-opacity: 1; } }
+
+/* -------------------------------- 
+			Chart
+-------------------------------- */
+#chart svg {
+  width: 70vw;
+  max-width: 500px; }
+  #chart svg g {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000; }
+  #chart svg g .drawing {
+    -webkit-animation: logo-outline 2s forwards;
+    -moz-animation: logo-outline 2s forwards;
+    -o-animation: logo-outline 2s forwards;
+    -ms-animation: logo-outline 2s forwards;
+    animation: logo-outline 2s forwards; }
 
 /* -------------------------------- 
 			Footer
