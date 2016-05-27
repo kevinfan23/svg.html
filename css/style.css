@@ -207,7 +207,7 @@ section.page-container {
   margin-right: 50%;
   transform: translate(-50%, -50%); }
 
-/*** Horizontal Flip ***/
+/*** Button Outline ***/
 .button-drawing i.fa-twitter {
   border-bottom: 4px solid #55acee;
   color: #55acee;
@@ -264,7 +264,32 @@ section.page-container {
     opacity: 1; } }
 
 /* -------------------------------- 
-			3D-Flip
+			Loader
+-------------------------------- */
+#pulse svg g {
+  stroke-dasharray: 80 1000;
+  animation: 3s Pulse ease-in-out infinite; }
+
+@-moz-keyframes Pulse {
+  0% {
+    stroke-dashoffset: 1000; }
+  100% {
+    stroke-dashoffset: 0; } }
+
+@-webkit-keyframes Pulse {
+  0% {
+    stroke-dashoffset: 1000; }
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes Pulse {
+  0% {
+    stroke-dashoffset: 120; }
+  100% {
+    stroke-dashoffset: -1000; } }
+
+/* -------------------------------- 
+			Draw and Fill
 -------------------------------- */
 svg.draw-fill-container {
   width: 70vw;
