@@ -210,20 +210,18 @@ section.page-container {
   transform: translate(-50%, -50%); }
 
 /*** Button Outline ***/
-.button-drawing i.fa-twitter {
+.button-outline i.fa-twitter {
   border-bottom: 4px solid #55acee;
-  color: #55acee;
-  -moz-transition: .2s ease-in-out;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out; }
+  color: #bdc3c7; }
 
-.button-drawing .svg-button rect {
+.button-outline .svg-button-outline rect {
   opacity: 0; }
 
-.button-drawing:hover .fa-twitter {
-  border: none; }
+.button-outline:hover .fa-twitter {
+  border: none;
+  color: #55acee; }
 
-.button-drawing:hover .svg-button rect {
+.button-outline:hover .svg-button-outline rect {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   -webkit-animation: .6s button-outline linear forwards;
@@ -265,11 +263,45 @@ section.page-container {
     stroke-width: 3px;
     opacity: 1; } }
 
+/*** Button Corner ***/
+.button-corner i.fa-facebook {
+  color: #bdc3c7; }
+
+.button-corner:hover .fa-facebook {
+  color: #3b5998; }
+
+.button-corner rect {
+  stroke-dasharray: 40 205;
+  stroke-dashoffset: 510;
+  -webkit-transition: .5s;
+  transition: .5s; }
+
+.button-corner:hover .svg-button-corner rect {
+  stroke-dasharray: 40 80;
+  stroke-dashoffset: -105; }
+
+/*** Button Edge ***/
+.button-edge i.fa-instagram {
+  color: #bdc3c7; }
+
+.button-edge:hover .fa-instagram {
+  color: #9b6954; }
+
+.button-edge rect {
+  stroke-dasharray: 48 1000;
+  stroke-dashoffset: 604;
+  -webkit-transition: .5s;
+  transition: .5s; }
+
+.button-edge:hover .svg-button-edge rect {
+  stroke-dasharray: 40 0;
+  stroke-dashoffset: 0; }
+
 /* -------------------------------- 
 			Pulse
 -------------------------------- */
 #pulse svg g {
-  stroke-dasharray: 80 1000;
+  stroke-dasharray: 120 1000;
   -moz-animation: 3s Pulse ease-in-out infinite;
   -webkit-animation: 3s Pulse ease-in-out infinite;
   animation: 3s Pulse ease-in-out infinite; }
@@ -372,6 +404,24 @@ svg.draw-fill-container {
   transform: translateX(-50%);
   margin-top: 103px;
   overflow: none; }
+
+#Solar ellipse, #sun {
+  opacity: 1;
+  animation: 3s Sun-Move ease-in-out infinite;
+  z-index: 999; }
+
+@keyframes Sun-Move {
+  0% {
+    transform: translateY(0); }
+  25% {
+    #Solar ellipse {
+      opacity: 0; }
+    #sun-fill {
+      fill: none; } }
+  50% {
+    transform: translateY(75px); }
+  100% {
+    transform: translateY(0); } }
 
 /* -------------------------------- 
 			Footer

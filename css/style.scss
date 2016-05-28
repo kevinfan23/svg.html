@@ -294,25 +294,23 @@ section.page-container {
 
 /*** Button Outline ***/
 
-.button-drawing {
+.button-outline {
 	
 	i.fa-twitter {
 		border-bottom: 4px solid rgba(85, 172, 238, 1);
-		color: rgba(85, 172, 238, 1);
-		-moz-transition: .2s ease-in-out;
-		-webkit-transition:	.2s ease-in-out;
-		transition: .2s ease-in-out;
+		color: #bdc3c7;
 	}
 	
-	.svg-button rect {
+	.svg-button-outline rect {
 		opacity: 0;
 	}
 	
 	&:hover .fa-twitter {
 		border: none;
+		color: rgba(85, 172, 238, 1);
 	}
 	
-	&:hover .svg-button rect {
+	&:hover .svg-button-outline rect {
 		stroke-dasharray: 1000;
 		stroke-dashoffset: 1000;
 		-webkit-animation: .6s button-outline linear forwards;
@@ -367,12 +365,63 @@ section.page-container {
     opacity: 1;
   }
 }
+
+/*** Button Corner ***/
+
+.button-corner {
+	
+	i.fa-facebook {
+		color: #bdc3c7;
+	}
+	
+	&:hover .fa-facebook {
+		color: #3b5998;
+	}
+
+	rect {
+		stroke-dasharray: 40 205;
+		stroke-dashoffset: 510;
+		-webkit-transition: .5s;
+		transition: .5s;
+	}
+	
+	&:hover .svg-button-corner rect {
+		stroke-dasharray: 40 80;
+	    stroke-dashoffset: -105;
+	}
+}
+
+/*** Button Edge ***/
+
+.button-edge {
+	
+	i.fa-instagram {
+		color: #bdc3c7;
+	}
+	
+	&:hover .fa-instagram {
+		color: #9b6954;
+	}
+
+	rect {
+		stroke-dasharray: 48 1000;
+		stroke-dashoffset: 604;
+		-webkit-transition: .5s;
+		transition: .5s;
+	}
+	
+	&:hover .svg-button-edge rect {
+		stroke-dasharray: 40 0;
+	    stroke-dashoffset: 0;
+	}
+}
+
 /* -------------------------------- 
 			Pulse
 -------------------------------- */
 
 #pulse svg g {
-	stroke-dasharray: 80 1000;
+	stroke-dasharray: 120 1000;
 	-moz-animation: 3s Pulse ease-in-out infinite;
 	-webkit-animation: 3s Pulse ease-in-out infinite;
 	animation: 3s Pulse ease-in-out infinite;
@@ -517,6 +566,33 @@ svg.draw-fill-container {
 }
 
 .solar-path {
+}
+
+#Solar ellipse, #sun {
+	opacity: 1;
+	animation: 3s Sun-Move ease-in-out infinite;
+	z-index: 999;
+}
+
+@keyframes Sun-Move {
+	0%{
+		transform: translateY(0);
+	}
+	25%{
+		#Solar ellipse {
+			opacity: 0;
+		}
+		
+		#sun-fill {
+			fill: none;
+		}
+	}
+	50%{
+		transform: translateY(75px);
+	}
+	100%{
+		transform: translateY(0);
+	}
 }
 
 /* -------------------------------- 
