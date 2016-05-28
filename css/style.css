@@ -40,7 +40,7 @@ html, body {
 
 p.reference {
   margin-top: -20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-size: 12px; }
   p.reference a {
     color: #3c3c3c; }
@@ -155,11 +155,11 @@ section.page-container {
 #intro {
   max-width: 800px; }
   #intro .section-container {
-    margin-top: 70px; }
+    margin-top: 0px; }
 
 .section-container {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   width: 90%;
   transform: translate(-50%, -50%);
@@ -349,14 +349,29 @@ svg.draw-fill-container {
   width: 70vw;
   max-width: 500px; }
   #chart svg g {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000; }
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000; }
   #chart svg g .drawing {
     -webkit-animation: logo-outline 2s forwards;
     -moz-animation: logo-outline 2s forwards;
     -o-animation: logo-outline 2s forwards;
     -ms-animation: logo-outline 2s forwards;
     animation: logo-outline 2s forwards; }
+
+/* -------------------------------- 
+			Sun Rise/Set
+-------------------------------- */
+#apple-watch {
+  width: 200px;
+  height: auto; }
+
+#solar {
+  position: absolute;
+  left: 50%;
+  margin-right: 50%;
+  transform: translateX(-50%);
+  margin-top: 103px;
+  overflow: none; }
 
 /* -------------------------------- 
 			Footer

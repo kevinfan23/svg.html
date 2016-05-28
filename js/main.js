@@ -1,5 +1,6 @@
+	var isUpdated = false;
+
 $(document).ready(function() {
-	
 	smoothScroll();
 	
 	// Animate menu using animate.css
@@ -95,9 +96,8 @@ function isElementInViewport(elem) {
 // Check if it's time to start the radial progress animation.
 function drawFillAnimation() {
 	
-    var $elem1 = $('.draw-fill-container');
-    var $elem2 = $('#chart');
-
+    var $elem1 = $('#apple_tv');
+    var $elem2 = $('#1D');
 
     // If the animation has already been started
     //if ($elem1.hasClass('fill-one')) return;
@@ -109,7 +109,10 @@ function drawFillAnimation() {
     }
     if (isElementInViewport($elem2)) {
         // Start the animation
-        setTimeout(updateNumber, 500);
+        if (isUpdated == false) {
+	        updateNumber();
+        }
+        isUpdated = true;
         $('#chart g').attr('class', 'drawing');
     }
 }
