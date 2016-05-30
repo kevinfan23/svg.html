@@ -17,11 +17,11 @@
   <p><strong>Features Included:</strong></p>
   
   <ul>
-  <li>2-D Flip Buttons</li>
-  <li>3-D Flip Buttons</li>
-  <li>Slide-In Buttons</li>
-  <li>Switch Buttons</li>
-  <li>Water Fill Effects</li>
+  <li>Button Border Animations</li>
+  <li>Pulse</li>
+  <li>Draw and Fill Animations</li>
+  <li>Responsive Chart Animation</li>
+  <li>Apple Watch Sun Rise/Set Remake</li>
   </ul>
 </blockquote>
 
