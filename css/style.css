@@ -402,25 +402,123 @@ svg.draw-fill-container {
   left: 50%;
   margin-right: 50%;
   transform: translateX(-50%);
-  margin-top: 103px;
-  overflow: none; }
-
-#Solar ellipse, #sun {
-  opacity: 1;
-  animation: 3s Sun-Move ease-in-out infinite;
+  margin-top: 93px;
+  overflow: none;
+  height: 150px;
   z-index: 999; }
+
+#solar-object #sun use {
+  opacity: 1;
+  -moz-animation: 4s Sun-Move ease-in-out infinite;
+  -webkit-animation: 4s Sun-Move ease-in-out infinite;
+  animation: 4s Sun-Move ease-in-out infinite;
+  z-index: 999; }
+
+#solar-object ellipse {
+  opacity: 1;
+  -moz-animation: 4s Sun-Gradient ease-in-out infinite;
+  -webkit-animation: 4s Sun-Gradient ease-in-out infinite;
+  animation: 4s Sun-Gradient ease-in-out infinite; }
+
+.solar-path {
+  position: absolute;
+  z-index: 0;
+  margin-left: -180px;
+  margin-top: 150px; }
+  .solar-path path {
+    -moz-animation: moveTheWave 4s linear infinite;
+    -webkit-animation: moveTheWave 4s linear infinite;
+    animation: moveTheWave 4s linear infinite;
+    stroke-dasharray: 1000; }
+
+@-moz-keyframes moveTheWave {
+  0% {
+    stroke-dashoffset: 700;
+    -moz-transform: translate3d(-20, 0, 0); }
+  100% {
+    stroke-dashoffset: 100;
+    transform: translate3d(-200px, 0, 0); } }
+
+@-webkit-keyframes moveTheWave {
+  0% {
+    stroke-dashoffset: 700;
+    transform: translate3d(-20, 0, 0); }
+  100% {
+    stroke-dashoffset: 100;
+    transform: translate3d(-200px, 0, 0); } }
+
+@keyframes moveTheWave {
+  0% {
+    stroke-dashoffset: 700;
+    transform: translate3d(-20, 0, 0); }
+  100% {
+    stroke-dashoffset: 100;
+    transform: translate3d(-200px, 0, 0); } }
+
+@-moz-keyframes Sun-Move {
+  0% {
+    -moz-transform: translateY(0); }
+  50% {
+    fill: transparent;
+    -moz-transform: translateY(75px); }
+  75% {
+    fill: white; }
+  100% {
+    -moz-transform: translateY(0); } }
+
+@-webkit-keyframes Sun-Move {
+  0% {
+    transform: translateY(0); }
+  50% {
+    fill: transparent;
+    transform: translateY(75px); }
+  75% {
+    fill: white; }
+  100% {
+    transform: translateY(0); } }
 
 @keyframes Sun-Move {
   0% {
     transform: translateY(0); }
-  25% {
-    #Solar ellipse {
-      opacity: 0; }
-    #sun-fill {
-      fill: none; } }
   50% {
+    fill: transparent;
+    transform: translateY(75px); }
+  75% {
+    fill: white; }
+  100% {
+    transform: translateY(0); } }
+
+@-moz-keyframes Sun-Gradient {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+  50% {
+    opacity: 0;
     transform: translateY(75px); }
   100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@-webkit-keyframes Sun-Gradient {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+  50% {
+    opacity: 0;
+    transform: translateY(75px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes Sun-Gradient {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+  50% {
+    opacity: 0;
+    transform: translateY(75px); }
+  100% {
+    opacity: 1;
     transform: translateY(0); } }
 
 /* -------------------------------- 
