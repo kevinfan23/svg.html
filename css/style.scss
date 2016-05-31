@@ -68,6 +68,14 @@ Small Window Size and Mobile Style
 			margin: 5px 5px !important;
 		}
 	}	
+	
+	h4 {
+		font-size: 40px !important;
+	}
+	
+	.next-collection {
+		font-size: 13px !important;
+	}
 }
 
 /* -------------------------------- 
@@ -83,6 +91,14 @@ p.reference {
 	margin-top: -20px;
 	margin-bottom: 30px;
 	font-size: 12px;
+	
+	a {
+		color: $dark-gray;
+	}
+}
+
+.next-collection {
+	font-size: 15px;
 	
 	a {
 		color: $dark-gray;

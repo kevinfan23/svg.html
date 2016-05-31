@@ -32,7 +32,11 @@ Small Window Size and Mobile Style
   .nav, .navbar {
     flex-wrap: wrap !important; }
     .nav .nav-item, .navbar .nav-item {
-      margin: 5px 5px !important; } }
+      margin: 5px 5px !important; }
+  h4 {
+    font-size: 40px !important; }
+  .next-collection {
+    font-size: 13px !important; } }
 
 /* -------------------------------- 
 		General Style
@@ -46,6 +50,11 @@ p.reference {
   margin-bottom: 30px;
   font-size: 12px; }
   p.reference a {
+    color: #3c3c3c; }
+
+.next-collection {
+  font-size: 15px; }
+  .next-collection a {
     color: #3c3c3c; }
 
 /*** svg Logo ***/
