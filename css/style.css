@@ -23,7 +23,10 @@ Small Window Size and Mobile Style
   svg#Svg-html-logo {
     width: 275px !important; }
   p.intro-des {
-    margin-top: 30px !important; }
+    margin-top: 30px !important;
+    font-size: 15px !important; }
+    p.intro-des span {
+      font-size: 12px !important; }
   .navbar-container {
     height: 120px !important; }
   .nav, .navbar {
