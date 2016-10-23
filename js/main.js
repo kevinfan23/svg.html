@@ -5,111 +5,30 @@ var isUpdated = false;
 
 $(document).ready(function() {
 		
+	/*** Back to Works ***/
+	$(window).scroll(function() {
+		if ($(window).scrollTop() <= 100) {
+			$('.about-me').removeClass('top');
+		}
+		else {
+			$('.about-me').addClass('top');
+		}
+	});
+	
 	$('.button-container, .switch-container').bind('touchstart mousedown', function(e){});
 		
 	$(window).scroll(function(){
     	drawFillAnimation();
 	});
 	
-	/*** kfan.io Animation ***/
+	/*** Logo and menu effects handlers ***/
+	logoHandler();
+	menuHandler();	
+	toggleConnectOverlay();  
 	
-	$('.collapse').addClass('uncollapsed');
-		$('#dot').addClass('unshifted');
-	
-		$(window).scroll(function() {
-			if ($(window).scrollTop() <= 10) {
-				$('.collapse').removeClass('collapsed');
-				$('.collapse').addClass('uncollapsed');
-				$('#dot').removeClass('shifted');
-				$('#dot').addClass('unshifted');
-				$('.kfan-logo .logo').css('color', '#fff');		
-			}
-			else {
-				$('.collapse').removeClass('uncollapsed');
-				$('.collapse').addClass('collapsed');
-				$('#dot').removeClass('unshifted');
-				$('#dot').addClass('shifted');	
-				$('.kfan-logo .logo').css('color', '#000');		
-			}
-		});
-		
-	/*** Connect page effects ***/
-	$('#connect').on('click', function() {
-		$('.connect-overlay').height($(window).height());
-		$('.connect-overlay').toggleClass('connected-overlay');
-		$('.connect-container').toggleClass('connected-container');
-		$('li.connect-item').toggleClass('fadeInDownSwing');
-		$('.connect-container').toggleClass('fixed-page');
-		$('#connect').toggleClass('connected');
-		$('.connect-overlay').on('click', function() {
-			$('.connect-overlay').removeClass('connected-overlay');
-			$('.connect-container').removeClass('connected-container')
-			$('li.connect-item').removeClass('fadeInDownSwing');
-			$('.connect-container').removeClass('fixed-page');
-			$('#connect').removeClass('connected');
-		});
-	});
-	
-	/*** Side Navbar Animations ***/
-	updateNavigation();
-	
-	$(window).on('scroll', function(){
-		updateNavigation();
-	    if (isElementInViewport($('#section1'))) {
-		    $('.sidenavbar-container').removeClass('is-appeared');
-	    }
-	    else {
-		    $('.sidenavbar-container').addClass('is-appeared');
-	    }
-	});	
-
-	//smooth scroll to the section
-	navigationItems.on('click', function(event){
-        event.preventDefault();
-        smoothScroll($(this.hash));
-    });	
-    
-    $('.menu-icon').on('click', function() {
-	    var span = $('#menu-span');
-	    if (span.text() === "close.") {
-		    console.log('haha');
-		    span.text('menu.');
-	    } else {
-			$('#menu-span').text('close.');
-		}
-		$('body').toggleClass('fixed-page');
-		$('.menu-container').toggleClass('fadeInScale');
-		$('.connect-overlay').removeClass('connected-overlay');
-		$('.connect-container').removeClass('connected-container');
-		$('li.connect-item').removeClass('fadeInDownSwing');
-		$('.connect-container').removeClass('fixed-page');
-		$('#connect').removeClass('connected');
-	});	
-   
 });
 
 /*** Helper Functions ***/
-				
-// Update navigation dots and labels
-function updateNavigation() {
-	contentSections.each(function(){
-		$this = $(this);
-		var activeSection = $('.sidenav-item a[href="#'+$this.attr('id')+'"]').data('number') - 1 ;
-		if ( ( $this.offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - $(window).height()/2 > $(window).scrollTop() ) ) {
-			navigationItems.eq(activeSection).addClass('is-selected');
-		}else {
-			navigationItems.eq(activeSection).removeClass('is-selected');
-		}
-	});
-}
-
-// Smooth scroll actions
-function smoothScroll(target) {
-    $('body,html').animate(
-    	{'scrollTop':target.offset().top},
-    	400
-    );
-}
 
 // Check if element is in viewpoint
 function isElementInViewport(elem) {

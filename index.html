@@ -28,53 +28,50 @@
 	<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
 	<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">	
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Svg.html</title>
 </head>
-<body>
-<!-- kfan.io Logo -->
-<div class="block-logo kfan-logo">
-	<a class="home-top" href="http://kfan.io"><span class="logo">kf<span class="collapse"><i>a</i><i>n</i></span><i id="dot">.</i></span></a>
-</div>
-
-<!-- Mobile Menu Logo -->
-<div class="block-logo menu-logo">
-	<a class="menu-icon" href="#"><span class="logo" id="menu-span">menu.</span></a>
-</div>
-		
-<!-- Side Navbar -->
-<nav class="sidenavbar-container">
-	<ul class="sidenav navbar">
-		<li class="sidenav-item sidenav-heading"><a href="#section1" data-number="1" class="sidenav-heading-link">Svg.html</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section2" data-number="2">00. Motivation</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section3" data-number="3">01. Buttons</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section4" data-number="4">02. Pulse</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section5" data-number="5">03. Draw and Fill</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section6" data-number="6">04. Chart</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section7" data-number="7">05. Run Rise/Set</a></li>
-	</ul>
-</nav>
+<body class="light scg.html">
 
 <div class="page-container">
+		
+	<div class="block-logo kfan-logo light">
+		<a class="home-top" href="index.html"><span class="logo">kfan<i id="dot">.</i></span></a>
+	</div>
+	
+	<!-- Mobile Menu Logo -->
+	<div class="block-logo menu-logo light">
+		<a class="menu-icon" href="#"><span class="logo" id="menu-span">menu.</span></a>
+	</div>
+			
+	<!-- Navbar -->
+	<nav class="navbar-container">
+		<ul class="nav navbar">
+			<li class="nav-item connect dark"><a href="#">CONNECT</a></li>
+		</ul>
+	</nav>
+	
+	<nav class="nav-arrow about-me">
+		<a href="index.html"><img class="nav-icon" src="img/backtoworks.png"/></a>
+	</nav>
 	
 	<!-- Menu Overlay -->
 	<div class="menu-container">
 		<ul class="menu-list">
 			<li class="menu-item">
-				<a href="http://kfan.io/project">Project</a>	
+				<a href="index.html">Project</a>	
 			</li>
 			<li class="menu-item">
 				<a href="http://kfan.io/about">About</a>	
 			</li>
 			<li class="menu-item">
-				<a href="#" id="connect">Connect</a>	
+				<a href="#" class="connect">Connect</a>	
 			</li>
 		</ul>
 	</div>
-	
+
+	<!-- Connect Overlay -->
 	<div class="connect-overlay"></div>
 
 	<nav class="connect-container">
@@ -116,25 +113,25 @@
 				</a>
 			</li>	
 		</ul>
-	</nav>
+	</nav>	
 	
 
 	
 	<!-- Header Page -->
-	<div class="header" id="section1">
+	<div class="header">
 		<h4 class="">Svg.html</h4>
 	</div>
 	
 	<!-- Intro Page -->
-	<div class="image-container intro" id="section2">
+	<div class="image-container intro">
 		<p>
-			Svg.html:
-			<span>Svg is the flow of finger tips<br>How do we make static pages dance?</span></br>
+			<span>Svg.html</span></br>
+			How do we make static pages dance?
 		</p>
 	</div>
 		
 	<!-- Buttons -->
-	<section class="page-container" id="section3">
+	<section class="svg-wrapper" id="section3">
 	  	<section class="section-container">
 	    	<h4>Buttons</h4>
 	    	<p class="reference">*Inspired by <a href="http://codepen.io/seanmccaffery/" target="_blank">Sean McCaffery</a></p>
@@ -178,7 +175,7 @@
 	
 	
 	<!-- Pulse -->
-	<section class="page-container pulse" id="section4">
+	<section class="svg-wrapper pulse" id="section4">
 	  	<section class="section-container">
 	    	<h4><span style="color:#2ecc71">P</span><span style="color:#3498db">u</span><span style="color:#F8E71C">l</span><span style="color:#e74c3c">s</span><span>e</span></h4>
 			<svg width="231px" height="160px" viewBox="0 0 231 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -193,7 +190,7 @@
 	    
 
 	<!-- Draw and Fill -->
-	<section class="page-container" id="section5">
+	<section class="svg-wrapper" id="section5">
 		<section class="section-container">
 			<h4>Draw and Fill</h4>
 			<p class="reference">*Drawings by <a href="https://dribbble.com/anand_krish" target="_blank">Anantha Krishnan</a></p>
@@ -446,7 +443,7 @@
 	</section>
 		
 	<!-- Chart -->
-	<section class="page-container" id="section6">
+	<section class="svg-wrapper" id="section6">
 	  	<section class="section-container" id="chart">
 		  	<h4>Chart</h4>
 			<svg width="750px" height="400px" viewBox="0 400 750 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -500,7 +497,7 @@
 		</section>
 	</section>
 		
-	<section class="page-container" id="section7">
+	<section class="svg-wrapper" id="section7">
 	  	<section class="section-container">
 		  	<h4>Sun Rise/Set</h4>
 		  	<p class="reference">*Device mock-up by <a href="https://designcode.io" target="_blank">MengTo</a></p>
@@ -573,6 +570,7 @@
 	
 <script src="js/jquery-2.2.3.min.js"></script>
 <script src="js/pace.js"></script>
+<script src="js/logo-connect.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
