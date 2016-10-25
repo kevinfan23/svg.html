@@ -104,6 +104,14 @@ Small Window Size and Mobile Style
 	.nav, .navbar {
 		display: none !important;
 	}
+	
+	.menu-item {
+		height: 100px !important;
+		
+		a {
+			font-size: 50px !important;
+		}
+	}
 }
 
 @media screen and (max-width: 550px) {
@@ -142,6 +150,17 @@ Small Window Size and Mobile Style
 				padding: 10px 0 10px 40px !important;
 				font-size: 12px !important;
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 350px) {
+	
+	.menu-item {
+		height: 90px !important;
+		
+		a {
+			font-size: 45px !important;
 		}
 	}
 }
