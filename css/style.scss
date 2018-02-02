@@ -24,7 +24,7 @@ $UIyellow: #F8E71C;
 $UIgreen: #13bf11;
 $dark-brown: #542900;
 
-/* -------------------------------- 
+/* --------------------------------
 Small Window Size and Mobile Style
 -------------------------------- */
 
@@ -32,54 +32,54 @@ Small Window Size and Mobile Style
 	.header h4 {
 		font-size: 160px !important;
 	}
-	
+
 	.image-container {
 		width: 70% !important;
 	}
 }
 
 @media screen and (max-width: 850px) {
-	
+
 	.button-container {
 		margin: 10px 10px !important;
 	}
-  
+
 	.image-container {
 		width: 70% !important;
 	}
-	
+
 	.button-container {
 		margin: 10px 10px !important;
 	}
-	
+
 	h2 {
 	  	font-size: 15vw !important;
 	}
-}	
+}
 @media screen and (max-width: 750px) {
-	
+
 	.header h4 {
 		font-size: 100px !important;
 	}
-	
+
 	.intro {
-		
+
 		p {
 			font-size: 18px !important;
 		}
-		
+
 		span {
 			font-size: 18px !important;
 		}
 	}
 	.image-container {
 		width: 80% !important;
-		
+
 		p {
 			font-size: 18px !important;
 			padding: 50px 0 !important;
 		}
-		
+
 		.section-index {
 			font-size: 15px !important;
 		}
@@ -88,26 +88,26 @@ Small Window Size and Mobile Style
 
 
 @media screen and (max-width: 625px) {
-	
+
 	.block-logo, .nav-arrow {
 		display: none !important;
 	}
-		
+
 	.menu-logo {
 		display: block !important;
 	}
-	
+
 	.navbar-container {
 		display: none !important;
 	}
-	
+
 	.nav, .navbar {
 		display: none !important;
 	}
-	
+
 	.menu-item {
 		height: 100px !important;
-		
+
 		a {
 			font-size: 50px !important;
 		}
@@ -119,11 +119,11 @@ Small Window Size and Mobile Style
 	  width: 400px;
 	  height: auto !important;
 	}
-	
+
 	#chart svg {
 		height: 300px !important;
 	}
-	
+
 	.header h4 {
 		font-size: 60px !important;
 	}
@@ -134,18 +134,18 @@ Small Window Size and Mobile Style
 	svg#Svg-html-logo {
 	  	width: 275px !important;
 	}
-	
+
 	.connect-container {
 		top: 150px !important;
 		width: 250px !important;
-		
+
 		li.connect-item {
-			
+
 			a {
 				font-size: 15px !important;
-				letter-spacing: 2px;	
+				letter-spacing: 2px;
 			}
-			
+
 			p.connect-info {
 				padding: 10px 0 10px 40px !important;
 				font-size: 12px !important;
@@ -155,17 +155,17 @@ Small Window Size and Mobile Style
 }
 
 @media screen and (max-width: 350px) {
-	
+
 	.menu-item {
 		height: 90px !important;
-		
+
 		a {
 			font-size: 45px !important;
 		}
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 		General Style
 -------------------------------- */
 
@@ -186,11 +186,11 @@ body {
 
 .highlight {
 	background: #FCEA34;
-	border-radius: 3px;	
+	border-radius: 3px;
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 		Page Style
 -------------------------------- */
 
@@ -198,7 +198,7 @@ p.reference {
 	margin-top: -20px;
 	margin-bottom: 30px;
 	font-size: 12px;
-	
+
 	a {
 		color: $dark-gray;
 	}
@@ -252,7 +252,7 @@ text {
 	padding-left: 35px;
 	font-size: 25px;
 	letter-spacing: 2px;
-		
+
 	a {
 		text-decoration: none;
 	}
@@ -302,7 +302,7 @@ span.logo.light {
     bottom: 0px;
 	overflow: auto;
 	background-attachment: fixed;
-	transform: scale(1.5); 
+	transform: scale(1.5);
 	transition: 0.5s cubic-bezier(0, 1, 0.5, 1);
 }
 
@@ -313,13 +313,13 @@ span.logo.light {
 	margin-bottom: -50%;
 	transform: translateY(-50%);
 	margin-top: 30px;
-	
 
-	
+
+
 	.menu-item {
 		height: 130px;
 		text-align: center;
-		
+
 		a {
 			font-family: $Poppins;
 			font-size: 65px;
@@ -338,8 +338,8 @@ span.logo.light {
 .fadeInScale {
 	z-index: 10 !important;
     opacity: 1 !important;
-	-webkit-transform: scale(1) !important; 
-	transform: scale(1) !important; 
+	-webkit-transform: scale(1) !important;
+	transform: scale(1) !important;
 }
 
 /*** Navbar ***/
@@ -387,14 +387,14 @@ span.logo.light {
 nav .connect.dark {
 	background: transparent;
 	border: 1px solid #fff;
-	
+
 	a {
 		color: #fff;
 	}
-	
+
 	&:hover {
 		background: #fff;
-		
+
 		 a {
 			 color: #000;
 		 }
@@ -404,10 +404,10 @@ nav .connect.dark {
 nav .connect.light {
 	background: transparent;
 	border: 1px solid #000;
-	
+
 	&:hover {
 		background: #000;
-		
+
 		 a {
 			 color: #fff;
 		 }
@@ -418,11 +418,11 @@ nav .connect.light {
 	background: #fff !important;
 	z-index: 100 !important;
 	border: none;
-	
+
 	a {
 		color: #000 !important;
 	}
-	
+
 	&:hover {
 		a {
 			color: #000 !important;
@@ -434,9 +434,9 @@ nav .connect.light {
 	position: fixed;
 	z-index: 10;
 	width: 150px;
-	
+
 	transition: all 0.3s cubic-bezier(0, 1, 0.5, 1);
-	
+
 	img {
 		width: 150px;
 		height: auto;
@@ -448,7 +448,7 @@ nav .connect.light {
 	top: 100px;
 	left: 20px;
     opacity: 1;
-	
+
 	&:hover {
 		-webkit-transform: translate(10px, 0) !important;
 		transform: translate(10px, 0) !important;
@@ -468,7 +468,7 @@ nav .connect.light {
 	background-origin: center center;
 	background-size: cover;
 	text-align: center;
-	
+
 	h4 {
 		color: #fff;
 		font-size: 220px;
@@ -486,7 +486,7 @@ nav .connect.light {
 	width: 60%;
 	margin: 0 auto;
 	padding: 0;
-	
+
 	p {
 		display: block;
 		width: 100%;
@@ -497,12 +497,12 @@ nav .connect.light {
 		line-height: 40px;
 		color: #808080;
 		padding: 120px 0;
-		
+
 		span {
 			display: block;
 			color: #3c3c3c;
 		}
-		
+
 		.section-index {
 			color: #5FA6E0;
 			font-size: 18px;
@@ -510,10 +510,10 @@ nav .connect.light {
 			padding-bottom: 0 !important;
 			margin-bottom: -30px;
 		}
-		
+
 		a {
 			color: #000;
-			
+
 			&:hover {
 				color: #808080;
 			}
@@ -551,7 +551,7 @@ section.svg-wrapper {
 
 #intro {
 	max-width: 800px;
-	
+
 	.section-container {
 		margin-top: 0px;
 	}
@@ -564,7 +564,7 @@ section.svg-wrapper {
   width: 90%;
   transform: translate(-50%, -50%);
   text-align: center;
-  
+
   h4 {
     font-size: 50px;
     font-weight: 300;
@@ -573,7 +573,7 @@ section.svg-wrapper {
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 			Buttons
 -------------------------------- */
 
@@ -589,8 +589,8 @@ section.svg-wrapper {
   width: 200px;
   -webkit-perspective: 1000;
   -ms-perspective: 1000;
-  perspective: 1000; 
-  
+  perspective: 1000;
+
   .button {
     height: 45px;
     width: 200px;
@@ -601,7 +601,7 @@ section.svg-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     i.fa {
       font-size: 20px;
       padding: 11px 10px;
@@ -613,31 +613,31 @@ section.svg-wrapper {
 .button-icon {
 	position: absolute;
 	height: 45px;
-    width: 45px !important;
-    top: 50%;
-    left: 50%;
-    margin-right: 50%;
-    transform: translate(-50%, -50%);
+	width: 45px !important;
+	top: 70%;
+	left: 50%;
+	margin-right: 50%;
+	transform: translate(-50%, -50%);
 }
 
 /*** Button Outline ***/
 
 .button-outline {
-	
+
 	i.fa-twitter {
 		border-bottom: 4px solid rgba(85, 172, 238, 1);
 		color: #bdc3c7;
 	}
-	
+
 	.svg-button-outline rect {
 		opacity: 0;
 	}
-	
+
 	&:hover .fa-twitter {
 		border: none;
 		color: rgba(85, 172, 238, 1);
 	}
-	
+
 	&:hover .svg-button-outline rect {
 		stroke-dasharray: 1000;
 		stroke-dashoffset: 1000;
@@ -697,11 +697,11 @@ section.svg-wrapper {
 /*** Button Corner ***/
 
 .button-corner {
-	
+
 	i.fa-facebook {
 		color: #bdc3c7;
 	}
-	
+
 	&:hover .fa-facebook {
 		color: #3b5998;
 	}
@@ -712,7 +712,7 @@ section.svg-wrapper {
 		-webkit-transition: .5s;
 		transition: .5s;
 	}
-	
+
 	&:hover .svg-button-corner rect {
 		stroke-dasharray: 40 80;
 	    stroke-dashoffset: -105;
@@ -722,11 +722,11 @@ section.svg-wrapper {
 /*** Button Edge ***/
 
 .button-edge {
-	
+
 	i.fa-instagram {
 		color: #bdc3c7;
 	}
-	
+
 	&:hover .fa-instagram {
 		color: #9b6954;
 	}
@@ -737,14 +737,14 @@ section.svg-wrapper {
 		-webkit-transition: .5s;
 		transition: .5s;
 	}
-	
+
 	&:hover .svg-button-edge rect {
 		stroke-dasharray: 40 0;
 	    stroke-dashoffset: 0;
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 			Pulse
 -------------------------------- */
 
@@ -782,7 +782,7 @@ section.svg-wrapper {
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 			Draw and Fill
 -------------------------------- */
 
@@ -791,13 +791,13 @@ svg.draw-fill-container {
 	max-width: 600px;
 	height: auto;
 	max-height: 380px;
-	
-	g {		
+
+	g {
 		fill-opacity: 1;
 		stroke-dasharray: 1000;
 		stroke-dashoffset: 0;
 	}
-	
+
 	g .drawing {
 		-moz-animation: 3s draw-fill ease-in-out;
 		-webkit-animation: 3s draw-fill ease-in-out;
@@ -853,29 +853,29 @@ svg.draw-fill-container {
   	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 			Chart
 -------------------------------- */
 
 #chart svg {
 	width: 70vw;
 	max-width: 500px;
-	
+
 	g {
 		stroke-dasharray: 2000;
 		stroke-dashoffset: 2000;
 	}
-	
+
 	g .drawing {
 		-webkit-animation: logo-outline 2s forwards;
 		-moz-animation: logo-outline 2s forwards;
 		-o-animation: logo-outline 2s forwards;
 		-ms-animation: logo-outline 2s forwards;
-		animation: logo-outline 2s forwards;	
+		animation: logo-outline 2s forwards;
   	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 			Sun Rise/Set
 -------------------------------- */
 
@@ -915,7 +915,7 @@ svg.draw-fill-container {
 	z-index: 0;
 	margin-left: -180px;
 	margin-top: 150px;
-	
+
 	path {
 		-moz-animation:  moveTheWave 4s linear infinite;
 		-webkit-animation:  moveTheWave 4s linear infinite;
@@ -1053,13 +1053,13 @@ svg.draw-fill-container {
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 			Footer
 -------------------------------- */
 .footer {
-	
+
 	text-decoration: none;
-	
+
 	div {
 		padding: 0;
 		height: 100px;
@@ -1071,14 +1071,14 @@ svg.draw-fill-container {
 		-moz-transition: all 0.2s linear;
 		transition: all 0.2s linear;
 	}
-	
+
 	p {
 		-webkit-transition: all 0.2s linear;
 		-moz-transition: all 0.2s linear;
 		transition: all 0.2s linear;
 		font-family: $Source-sans;
 		vertical-align: middle;
-		line-height: 100px; 
+		line-height: 100px;
 		letter-spacing: 2px;
 		font-weight: 600;
 		font-size: 18px;
@@ -1088,13 +1088,13 @@ svg.draw-fill-container {
 
 .footer:hover .footer-container {
 	background: rgba(95, 166, 224, 0.8);
-	
+
 	p {
 		color: #fff;
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 		Contact Overlay
 -------------------------------- */
 
@@ -1127,16 +1127,16 @@ svg.draw-fill-container {
 	transform: translateX(-50%);
 	top: 200px;
 	z-index: -1;
-	
+
 	li.connect-item {
-		
+
 		animation-duration: .2s;
 		opacity: 0;
-		
+
 		&:hover .connect-link {
 			color: #9b9b9b;
 		}
-		
+
 		&:nth-of-type(1) {
 			animation-delay: 50ms;
 		}
@@ -1155,15 +1155,15 @@ svg.draw-fill-container {
 		&:nth-of-type(6) {
 			animation-delay: 300ms;
 		}
-		
+
 		a {
 			color: #f7f7f7;
-			font-family: "Futura Book";	
+			font-family: "Futura Book";
 			text-decoration: none;
 			font-size: 20px;
-			letter-spacing: 2px;	
+			letter-spacing: 2px;
 		}
-		
+
 		p.connect-info {
 			display: inline-block;
 			padding: 15px 0 15px 70px;
@@ -1181,7 +1181,7 @@ svg.draw-fill-container {
 	position: fixed !important;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 		Custom Animations
 -------------------------------- */
 
@@ -1267,7 +1267,7 @@ svg.draw-fill-container {
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 		Vendor Customization
 -------------------------------- */
 
@@ -1287,7 +1287,7 @@ svg.draw-fill-container {
 	background: #9bc9ee;
   	background: -webkit-linear-gradient(left, #4776E6, #8E54E9);
    	background: -moz-linear-gradient(right,#4776E6, #8E54E9);
-  	background: linear-gradient(right, #4776E6, #8E54E9);  
+  	background: linear-gradient(right, #4776E6, #8E54E9);
   	position: fixed;
 	z-index: 2000;
 	top: 0;

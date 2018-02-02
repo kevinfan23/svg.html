@@ -76,7 +76,7 @@
   /* IE */ }
 
 /*** Variables ***/
-/* -------------------------------- 
+/* --------------------------------
 Small Window Size and Mobile Style
 -------------------------------- */
 @media screen and (max-width: 1050px) {
@@ -152,7 +152,7 @@ Small Window Size and Mobile Style
     .menu-item a {
       font-size: 45px !important; } }
 
-/* -------------------------------- 
+/* --------------------------------
 		General Style
 -------------------------------- */
 body {
@@ -172,7 +172,7 @@ body {
   background: #FCEA34;
   border-radius: 3px; }
 
-/* -------------------------------- 
+/* --------------------------------
 		Page Style
 -------------------------------- */
 p.reference {
@@ -461,7 +461,7 @@ section.svg-wrapper {
     color: #3c3c3c;
     margin-bottom: 30px; }
 
-/* -------------------------------- 
+/* --------------------------------
 			Buttons
 -------------------------------- */
 /*** General Button Styles ***/
@@ -495,7 +495,7 @@ section.svg-wrapper {
   position: absolute;
   height: 45px;
   width: 45px !important;
-  top: 50%;
+  top: 70%;
   left: 50%;
   margin-right: 50%;
   transform: translate(-50%, -50%); }
@@ -588,7 +588,7 @@ section.svg-wrapper {
   stroke-dasharray: 40 0;
   stroke-dashoffset: 0; }
 
-/* -------------------------------- 
+/* --------------------------------
 			Pulse
 -------------------------------- */
 .pulse svg g {
@@ -615,7 +615,7 @@ section.svg-wrapper {
   100% {
     stroke-dashoffset: -1000; } }
 
-/* -------------------------------- 
+/* --------------------------------
 			Draw and Fill
 -------------------------------- */
 svg.draw-fill-container {
@@ -665,7 +665,7 @@ svg.draw-fill-container {
     stroke-dashoffset: 0;
     fill-opacity: 1; } }
 
-/* -------------------------------- 
+/* --------------------------------
 			Chart
 -------------------------------- */
 #chart svg {
@@ -681,7 +681,7 @@ svg.draw-fill-container {
     -ms-animation: logo-outline 2s forwards;
     animation: logo-outline 2s forwards; }
 
-/* -------------------------------- 
+/* --------------------------------
 			Sun Rise/Set
 -------------------------------- */
 #apple-watch {
@@ -812,7 +812,7 @@ svg.draw-fill-container {
     opacity: 1;
     transform: translateY(0); } }
 
-/* -------------------------------- 
+/* --------------------------------
 			Footer
 -------------------------------- */
 .footer {
@@ -844,7 +844,7 @@ svg.draw-fill-container {
   .footer:hover .footer-container p {
     color: #fff; }
 
-/* -------------------------------- 
+/* --------------------------------
 		Contact Overlay
 -------------------------------- */
 .connect-overlay {
@@ -908,7 +908,7 @@ svg.draw-fill-container {
 .fixed-page {
   position: fixed !important; }
 
-/* -------------------------------- 
+/* --------------------------------
 		Custom Animations
 -------------------------------- */
 .fadeInDownSwing {
@@ -979,7 +979,7 @@ svg.draw-fill-container {
     opacity: 1;
     transform: none; } }
 
-/* -------------------------------- 
+/* --------------------------------
 		Vendor Customization
 -------------------------------- */
 .pace {
